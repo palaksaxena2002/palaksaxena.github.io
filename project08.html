@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css"> 
+   
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+    
+</head>
+<body>
+   
+
+   <!-- resume Section
+   ================================================== -->
+	<!-- CTA Section
+   ================================================== -->
+    
+
+
+<section id="resume" >
+
+    <div class="row section-intro">
+       <div class="col-twelve">
+        
+           <h1 style="color: #000000;">CAR SALES</h1>
+
+
+           <h5 style="color: #9c1818d4;">OBJECTIVE</h5>
+           
+
+           <p class="lead" style="color: #000000;">To provide a comprehensive and visual overview of car sales performance, including key metrics such as total sales, number of cars sold, average car price, and sales trends over time. The dashboards aim to assist management and stakeholders in tracking business performance, identifying sales trends, and supporting decision-making for strategic initiatives in the automotive market.
+            <br>Facilitate quick data-driven insights for decision-makers.
+            Identify patterns in car sales based on model, region, and other factors.
+            Provide interactive and user-friendly data visualization for monitoring sales performance.</p>
+
+       </div>   	
+    </div>
+
+    <!--certifications-->
+    
+	<div class="gallery-area"></div>
+    <div class="container">
+        <div class="gallery-left">
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/carsale1.png" alt="Internship"  width="736" height="459"></div>
+            
+                <div class="gallery-item"><img src="images/carsales2.png" alt="Internship"></div>
+                <div class="gallery-item"><img src="images/carsales3.png" alt="Leetcode"></div>
+                <div class="gallery-item"><img src="images/carsales4.png" alt="Leetcode"></div>
+                
+                                              
+                
+            </div>
+            
+                
+        </div>
+        
+    </div>
+   
+</div>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+	
+    
+    <section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Key Technologies/Tools</h5>
+   			<h1></h1>
+
+   			<p class="lead" >Power BI: The dashboards are built using Power BI, as evidenced by its advanced visualizations, interactive filters, and intuitive layout. Power BI allows for:
+                 <br>Connecting to data sources (such as SQL, Excel, or databases containing car sales data).
+                 <br>Building custom visuals for KPI displays, trend analysis, and detailed tables.
+                 <br>Creating interactive filters (slicers) to allow users to explore data dynamically.
+                <br>Power BI Maps (Geo-mapping): For dealer region visualization, likely leveraging Bing Maps within PowerBI.
+                <br>DAX (Data Analysis Expressions): Used to calculate KPIs such as YTD totals,YoY growth, MTD sales, and other time intelligence metrics.
+                <br>Data Connection Tools: Power BI typically connects to data sources such as SQL databases,Excel spreadsheets to pull in sales data for visualization.
+                </p>
+            </p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+</section>
+
+<section id="contact">
+
+    <div class="row section-intro">
+       <div class="col-twelve">
+
+           <h5>Key Features</h5>
+           <h1></h1>
+
+           <p class="lead">Key Performance Indicators (KPIs): All dashboards prominently display KPIs such as YTD Total Sales, YTD Cars Sold, YTD Avg Price, and YoY Growth in various areas, providing instant insights into sales performance.
+            <br>Interactive Filters: The ability to filter data by Engine Type, Body Style, Dealer Name, and Transmission allows users to drill down into specific sales data based on key car attributes.
+            <br>Sales Trends: Line charts show the weekly sales trend, helping visualize how sales have fluctuated throughout the year.
+            <br>Dealer Region Map: This heat map or geographical chart highlights the region-wise performance of different car dealerships.
+            <br>Monthly Breakdown: Dashboards include Month-to-Date (MTD) metrics, providing insights into how the current month is performing relative to the overall YTD metrics.
+            <br>Visual Representations: Use of pie charts, bar charts, and line graphs to represent sales distribution by body style, color, and sales trends.
+        </p>
+            
+       </div> 
+   </div> <!-- /section-intro -->
+</section>
+
+
+
+<section id="contact">
+
+    <div class="row section-intro">
+       <div class="col-twelve">
+
+           <h5>Results</h5>
+           <h1></h1>
+
+           <p class="lead">Enhanced Decision-Making: These dashboards enable management to quickly assess the state of the business, facilitating timely decisions related to sales strategies, marketing campaigns, or inventory management.
+            <br>Real-Time Tracking: By having MTD and YTD metrics, stakeholders can monitor sales performance and adjust targets or strategies in real-time to hit company objectives.
+            <br>Improved Sales Focus: With the ability to break down sales by attributes (e.g., body style, color), management can identify which types of vehicles are performing well and focus marketing efforts accordingly. For example, if SUVs and Black cars are top-sellers, marketing can be optimized to push similar models/colors.
+            <br>Geographical Insights: Dealer region maps provide insights into geographical sales performance, helping to identify regions with lower sales, potentially targeting them with regional promotions or additional dealership support.
+            <br>Operational Efficiency: By offering a clear, concise view of all essential metrics on one screen, operational teams can work more efficiently, reducing the time spent analyzing disparate data sources.
+            <br>Trend Analysis: Weekly sales trends and YoY growth metrics allow the identification of seasonal trends, enabling businesses to prepare for high or low sales periods proactively.
+           </p>
+
+       </div> 
+   </div> <!-- /section-intro -->
+</section>
+
+
+    
+
+
+	<!--js-->
+	<script>
+		document.querySelectorAll('.gallery-item img').forEach(item => {
+			item.addEventListener('click', event => {
+				const imageSrc = event.target.src;
+				const popup = document.createElement('div');
+				popup.classList.add('image-popup');
+				popup.innerHTML = `<div class="popup-content"><img src="${imageSrc}" /><span class="close">&times;</span></div>`;
+				document.body.appendChild(popup);
+	
+				document.querySelector('.close').addEventListener('click', () => {
+					document.body.removeChild(popup);
+				});
+			});
+		});
+	</script>
+	
+	<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.gallery-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 266px);
+    grid-gap: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-right {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.gallery-right h2 {
+    font-size: 2.5rem;
+    color: #2a3950;
+}
+
+.gallery-right h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #3a485f;
+}
+
+.gallery-right p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #23395b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #1e324d;
+}
+
+
+/* Image hover effects */
+.gallery-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Zoom in and shadow effect on hover */
+.gallery-item img:hover {
+    transform: scale(1.1); /* Zoom in */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+/* Image popup styles */
+.image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+
+
+.gallery-item {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Fully visible on hover */
+}
+
+
+
+
+		/* Image popup styles */
+		.image-popup {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.8);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
+			
+		}
+	
+		.popup-content img {
+			max-width: 50%;
+			max-height: 50%;
+			border-radius: 10px;
+            display: block;   /* Ensures the image remains a block-level element */
+            margin: auto;
+			
+		}
+	
+		.close {
+			position: absolute;
+			top: 50px;
+			right: 100px;
+			font-size: 3rem;
+			color: white;
+			cursor: pointer;
+		}
+
+       
+
+	</style>
+	
+
+     <!-- about section end -->
+
+     <!-- Div container for the button -->
+    <div class="button-container">
+        <button class="back-button" onclick="goBack()">Home Page</button>
+    </div>
+
+    <style>
+        /* CSS to style the button */
+        .back-button {
+            padding: 5px 10px;
+            font-size: 15px;
+            color: white;
+            background-color: #dd1212;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #fdfcfc;
+            color: rgb(19, 19, 19);
+            
+        }
+
+        /* CSS to style the div */
+        .button-container {
+            text-align: center; /* Center the button within the div */
+            margin-top: 30px; /* Adjust the margin as needed */
+        }
+    </style>
+
+<script>
+    // JavaScript function to go back to the previous page
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+     
+
+</body>
+</html>

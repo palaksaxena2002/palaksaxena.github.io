@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css"> 
+   
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+    
+</head>
+<body>
+   
+
+   <!-- resume Section
+   ================================================== -->
+	<!-- CTA Section
+   ================================================== -->
+    
+
+
+<section id="resume" >
+
+    <div class="row section-intro">
+       <div class="col-twelve">
+        
+           <h1 style="color: #fcfcfc;">WEB SCRAPING & DATA VISUALIZATION OF BOOKSTORE PRODUCTS</h1>
+
+
+           <h5>OBJECTIVE</h5>
+           
+
+           <p class="lead">To automate the extraction of product data (such as book details and prices) from an online bookstore and present the data in a structured format for analysis and reporting purposes.</p>
+
+       </div>   	
+    </div>
+</section>
+
+<div class="button-container">
+    <button class="back-button" ><a href="#contact">Read More</a></button>
+</div>
+
+
+
+
+	<!--certifications-->
+    
+	<div class="gallery-area"></div>
+        <div class="container">
+            <div class="gallery-left">
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="images/webSrap1.png" alt="Internship"  width="736" height="459"></div>
+				
+                    <div class="gallery-item"><img src="images/websrap2.png" alt="Internship"></div>
+                    <div class="gallery-item"><img src="images/webscrap3.png" alt="Leetcode"></div>
+                    <div class="gallery-item"><img src="images/webscapr4.png" alt="Leetcode"></div>
+                    
+						                      	
+					
+				</div>
+				
+                    
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+    
+
+    
+    <section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Key Technologies/Tools</h5>
+   			<h1></h1>
+
+   			<p class="lead" >Python- language used
+                <br>Scrapy- for web scraping
+                <br>Pandas- for data manipulation
+                <br>IPython for displaying HTML tables
+                <br>XPath- for extracting data from HTML
+                <br>CSV- for data storage</p>
+            </p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+</section>
+
+<section id="contact">
+
+    <div class="row section-intro">
+       <div class="col-twelve">
+
+           <h5>Key Features</h5>
+           <h1></h1>
+
+           <p class="lead">Automated Web Scraping: Extracted book information (image, price, link, and title) from the website using Scrapy.
+            <br>Data Export: Saved the extracted data in a CSV file for further analysis.
+            <br>Data Processing: Loaded the CSV data into a Pandas DataFrame to modify and format it.
+            <br>HTML Visualization: Converted the DataFrame into an HTML table, including embedded images, to present the data in a visually appealing format.</p>
+            
+       </div> 
+   </div> <!-- /section-intro -->
+</section>
+
+<section id="contact">
+
+    <div class="row section-intro">
+       <div class="col-twelve">
+
+           <h5>Explanation</h5>
+           <h1></h1>
+
+           <p class="lead">Web Scraping is the automated process of extracting data from websites. It involves using software or scripts to collect structured information (such as text, images, or links) from web pages for various purposes like data analysis, research, or automation.
+
+            Scrapy is an open-source web scraping framework in Python used to extract data from websites, process it, and store it in various formats like CSV, JSON, or databases. It provides tools for handling requests, parsing web pages, following links, and managing scraped data efficiently.
+            
+            MySpider is a user-defined spider in the Scrapy framework that inherits from the scrapy.Spider class. It contains the logic for crawling web pages, starting from specified URLs, and extracting data based on custom rules. The spider uses methods like parse to process responses from web pages and extract or follow additional links for further scraping.
+            
+            In this project, Scrapy, a Python framework for extracting data from websites, is used to scrape information from an online bookstore (books.toscrape.com).
+            
+            Spider Setup: A class MySpider is defined, inheriting from scrapy.Spider. The spider begins crawling from the website’s homepage (https://books.toscrape.com/) and is restricted to the domain toscrape.com.
+            
+            Data Extraction: The parse method is responsible for iterating through each product container (article[@class="product_pod"]) on the page. It extracts key details such as the image link, price, product link, and title of the book using XPath queries. The extracted data is returned as a dictionary for each item.
+            
+            Exporting Data: The scraped data, including image links, prices, titles, and product links, is stored in a CSV file (output.csv) as specified by the CrawlerProcess.
+            
+            Outcome: This project automates the collection of product data, which can be utilized for price tracking, product comparison, or analytics purposes.
+            
+            Pandas and DataFrame Manipulation After the web scraping process, the extracted data from output.csv is loaded into a Pandas DataFrame for further analysis.
+            
+            Data Loading: The CSV file containing the scraped data is read into a Pandas DataFrame.
+            
+            Modifying the Image Column: The image_link column is modified to convert each URL into an HTML image tag, allowing the images to be displayed directly in a web format.
+            
+            HTML Table: The DataFrame is transformed into an HTML table with custom styles, including striped rows and rendered links for enhanced presentation. The IPython display function is used to render the HTML output within a notebook environment.
+            
+            Outcome: This code transforms and visualizes the scraped data in a well-structured, HTML-formatted table, which could be embedded in reports or websites.</p>
+
+       </div> 
+   </div> <!-- /section-intro -->
+</section>
+
+<section id="contact">
+
+    <div class="row section-intro">
+       <div class="col-twelve">
+
+           <h5>Results</h5>
+           <h1></h1>
+
+           <p class="lead">The project successfully automated the process of gathering and visualizing product data, reducing the manual effort required for data collection. The final output was a well-formatted HTML table that could be embedded into reports or used for market analysis, enhancing efficiency in product comparison and price monitoring.</p>
+
+       </div> 
+   </div> <!-- /section-intro -->
+</section>
+
+
+    
+
+
+	<!--js-->
+	<script>
+		document.querySelectorAll('.gallery-item img').forEach(item => {
+			item.addEventListener('click', event => {
+				const imageSrc = event.target.src;
+				const popup = document.createElement('div');
+				popup.classList.add('image-popup');
+				popup.innerHTML = `<div class="popup-content"><img src="${imageSrc}" /><span class="close">&times;</span></div>`;
+				document.body.appendChild(popup);
+	
+				document.querySelector('.close').addEventListener('click', () => {
+					document.body.removeChild(popup);
+				});
+			});
+		});
+	</script>
+	
+	<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.gallery-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 266px);
+    grid-gap: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-right {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.gallery-right h2 {
+    font-size: 2.5rem;
+    color: #2a3950;
+}
+
+.gallery-right h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #3a485f;
+}
+
+.gallery-right p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #23395b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #1e324d;
+}
+
+
+/* Image hover effects */
+.gallery-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Zoom in and shadow effect on hover */
+.gallery-item img:hover {
+    transform: scale(1.1); /* Zoom in */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+/* Image popup styles */
+.image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+
+
+.gallery-item {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Fully visible on hover */
+}
+
+
+
+
+		/* Image popup styles */
+		.image-popup {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.8);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
+			
+		}
+	
+		.popup-content img {
+			max-width: 50%;
+			max-height: 50%;
+			border-radius: 10px;
+            display: block;   /* Ensures the image remains a block-level element */
+            margin: auto;
+			
+		}
+	
+		.close {
+			position: absolute;
+			top: 50px;
+			right: 100px;
+			font-size: 3rem;
+			color: white;
+			cursor: pointer;
+		}
+
+       
+
+	</style>
+	
+
+     <!-- about section end -->
+
+     <!-- Div container for the button -->
+    <div class="button-container">
+        <button class="back-button" onclick="goBack()">Home Page</button>
+    </div>
+
+    <style>
+        /* CSS to style the button */
+        .back-button {
+            padding: 10px 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #dd1212;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #fdfcfc;
+            color: rgb(19, 19, 19);
+            
+        }
+
+        /* CSS to style the div */
+        .button-container {
+            text-align: center; /* Center the button within the div */
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+    </style>
+
+<script>
+    // JavaScript function to go back to the previous page
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+     
+
+</body>
+</html>

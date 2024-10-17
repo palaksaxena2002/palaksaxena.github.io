@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css"> 
+   
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+    
+</head>
+<body>
+   
+
+   <!-- resume Section
+   ================================================== -->
+	<!-- CTA Section
+   ================================================== -->
+    
+
+
+<section id="resume" >
+
+    <div class="row section-intro">
+       <div class="col-twelve">
+        
+           <h1 style="color: #000000;">SUPERSTORE SALES ANALYSIS DASHBOARD</h1>
+
+
+           <h5 style="color: #9c1818d4;">OBJECTIVE</h5>
+           
+
+           <p class="lead" style="color: #000000;">The objective of the Interactive Superstore Sales Dashboard is to provide a comprehensive overview of the company's sales and profitability performance over a 4-year period (2013 to 2018). The dashboard aims to help stakeholders make informed decisions by visualizing sales trends, analyzing key business metrics, and identifying areas of growth or decline across various segments, categories, cities, and shipping modes. The interactive nature of the dashboard allows users to drill down into data for deeper insights.</p>
+
+       </div>   	
+    </div>
+</section>
+
+<div class="button-container">
+    <button class="back-button" ><a href="#contact">Read More</a></button>
+</div>
+
+
+
+
+	<!--certifications-->
+    
+	<div class="gallery-area"></div>
+        <div class="container">
+            <div class="gallery-left">
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="images/sales1.png" alt="Internship"  width="736" height="459"></div>
+				
+                    <div class="gallery-item"><img src="images/sales2.png" alt="Internship"></div>
+                    <div class="gallery-item"><img src="images/sales3.png" alt="Leetcode"></div>
+                    <div class="gallery-item"><img src="images/sales4.png" alt="Leetcode"></div>
+                    
+						                      	
+					
+				</div>
+				
+                    
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+    
+
+    
+    <section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Key Technologies/Tools</h5>
+   			<h1></h1>
+
+   			<p class="lead" >Pivot Tables: Used to organize sales data by categories, sub-categories, cities, and customer segments.
+                <br>Data Tables: For displaying year-over-year sales data and growth percentages.
+                <br>Charts: Line and bar charts for visualizing trends (e.g., sales by quarter and state performance).
+                <br>Slicers/Filters: Interactive filters to allow users to adjust the data displayed by segment, category, and shipping mode.
+                
+                <br>Conditional Formatting:
+
+                Applied to highlight growth (green) and declines (red) across categories, sub-categories, and cities, helping users quickly identify performance changes
+                <br>Formulas:
+
+                Used for calculating growth percentages and other key metrics like profit growth vs the previous year
+                </p>
+            </p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+</section>
+
+<section id="contact">
+
+    <div class="row section-intro">
+       <div class="col-twelve">
+
+           <h5>Key Features</h5>
+           <h1></h1>
+
+           <p class="lead">Key Performance Indicators (KPIs):
+
+            Sales & Profit Comparison: Displays sales and profit for the latest year, previous year, and the percentage growth year-over-year.
+            Growth Metrics: Highlights growth percentages for both sales and profit, helping users track the performance trajectory over time.
+            <br>Sales & Profit Breakdown:
+
+            By Product Sub-Category: Shows detailed sales data for sub-categories such as Phones, Chairs, Storage, Appliances, etc., with year-over-year comparisons.
+            By City: Displays sales data for major cities, allowing users to analyze regional performance.
+            <br>Charts:
+
+            Sales and Price Trends by Quarter: Visualizes quarterly sales and price trends over 4 years, showing how sales volume and pricing changed throughout the period.
+            States with Highest All-Time Sales: A bar chart illustrating the states that have contributed the most to total sales, identifying high-performing regions.
+            <br>Year-over-Year Comparison:
+
+            Visual Indicators: Arrows (green for growth, red for decline) highlight year-over-year performance changes, making it easy to spot growth or declines across categories, segments, and regions.</p>
+            
+       </div> 
+   </div> <!-- /section-intro -->
+</section>
+
+
+
+<section id="contact">
+
+    <div class="row section-intro">
+       <div class="col-twelve">
+
+           <h5>Results</h5>
+           <h1></h1>
+
+           <p class="lead">
+            Increased Visibility:
+
+The dashboard provides clear visibility into key sales drivers by showing sales and profit performance across multiple dimensions such as categories, segments, and regions.
+Actionable Insights:
+
+With year-over-year comparisons and growth metrics, users can identify top-performing products, regions, and customer segments. This helps the business focus on high-growth areas while addressing declining sales in other segments or regions.
+Data-Driven Decision Making:
+
+By visualizing sales trends and profitability data, management can make data-backed decisions to improve sales strategies, allocate resources effectively, and optimize product offerings based on regional demand.
+Identifying Trends and Patterns:
+
+The quarterly sales and price trends allow users to spot seasonal patterns and changes in pricing strategies, enabling the business to adapt and forecast future performance more accurately.
+Improved Regional Focus:
+
+The state-level sales chart identifies the highest and lowest-performing states, allowing the company to focus efforts on expanding into lower-performing regions or increasing investments in high-growth states like California and New York.
+           </p>
+
+       </div> 
+   </div> <!-- /section-intro -->
+</section>
+
+
+    
+
+
+	<!--js-->
+	<script>
+		document.querySelectorAll('.gallery-item img').forEach(item => {
+			item.addEventListener('click', event => {
+				const imageSrc = event.target.src;
+				const popup = document.createElement('div');
+				popup.classList.add('image-popup');
+				popup.innerHTML = `<div class="popup-content"><img src="${imageSrc}" /><span class="close">&times;</span></div>`;
+				document.body.appendChild(popup);
+	
+				document.querySelector('.close').addEventListener('click', () => {
+					document.body.removeChild(popup);
+				});
+			});
+		});
+	</script>
+	
+	<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.gallery-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 266px);
+    grid-gap: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-right {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.gallery-right h2 {
+    font-size: 2.5rem;
+    color: #2a3950;
+}
+
+.gallery-right h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #3a485f;
+}
+
+.gallery-right p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #23395b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #1e324d;
+}
+
+
+/* Image hover effects */
+.gallery-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Zoom in and shadow effect on hover */
+.gallery-item img:hover {
+    transform: scale(1.1); /* Zoom in */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+/* Image popup styles */
+.image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+
+
+.gallery-item {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Fully visible on hover */
+}
+
+
+
+
+		/* Image popup styles */
+		.image-popup {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.8);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
+			
+		}
+	
+		.popup-content img {
+			max-width: 50%;
+			max-height: 50%;
+			border-radius: 10px;
+            display: block;   /* Ensures the image remains a block-level element */
+            margin: auto;
+			
+		}
+	
+		.close {
+			position: absolute;
+			top: 50px;
+			right: 100px;
+			font-size: 3rem;
+			color: white;
+			cursor: pointer;
+		}
+
+       
+
+	</style>
+	
+
+     <!-- about section end -->
+
+     <!-- Div container for the button -->
+    <div class="button-container">
+        <button class="back-button" onclick="goBack()">Home Page</button>
+    </div>
+
+    <style>
+        /* CSS to style the button */
+        .back-button {
+            padding: 10px 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #dd1212;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #fdfcfc;
+            color: rgb(19, 19, 19);
+            
+        }
+
+        /* CSS to style the div */
+        .button-container {
+            text-align: center; /* Center the button within the div */
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+    </style>
+
+<script>
+    // JavaScript function to go back to the previous page
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+     
+
+</body>
+</html>
